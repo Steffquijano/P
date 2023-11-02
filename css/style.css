@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #373537;
+    background-color: #80988d;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,7 +12,7 @@ body {
 .container {
     background-color: #90a69d;
     padding: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
@@ -56,3 +56,128 @@ button {
 button:hover {
     background-color: #1f352b;
 }
+
+
+
+
+.fas {
+    margin: 10px;
+    color: #365949;
+}
+
+
+#mapa {
+    margin-left: 20px;
+    color: #365949;
+    background-color: #90a69d;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+#mapa h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+iframe {
+    width: 350px;
+    height: 240px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.fab {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    transition: all .5s ease;
+
+}
+
+.fab:hover {
+    color: #626362;
+}
+
+@media (max-width: 950px){
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 30px;
+        width: 50%;
+        max-width: 200px;
+    }
+    
+    h1 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 200px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+    
+    button:hover {
+        background-color: #1f352b;
+    }
+    
+
+
+
+
+#mapa {
+    margin: 20px;
+    padding: 30px;
+    width: 50%;
+    max-width: 200px;
+}
+
+
+
+
+iframe {
+    width: 150px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.fab {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    transition: all .5s ease;
+
+}
+
+}
+
