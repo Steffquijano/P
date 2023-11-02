@@ -1,0 +1,29 @@
+body {
+	font-family: Montserrat;
+}
+.product-price-normal {
+    
+    margin: 0; /* Añadir subrayado al precio normal */
+    text-decoration: line-through;
+   
+    
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: 10px;
+    font-family: Montserrat;
+}
+
+.product-price-offer {
+    margin: 0; /* Añadir subrayado al precio normal */
+
+   
+    
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    font-family: Montserrat;
+
+}
+

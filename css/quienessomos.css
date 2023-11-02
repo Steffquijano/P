@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: Montserrat;
+    background-color: #f0f0f0;
+}
+
+
+
+#quienes-somos{
+    background-color: #e3e3e3;
+}
+.somos {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+#mision, #vision {
+    background-color: #e3e3e3;
+}
+
+.somos h1 {
+    font-size: 40px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.somos h2 {
+    font-size: 35px;
+    color: #333;
+    text-transform: uppercase;
+}
+.somos p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+.somos {
+    text-align: center;
+}
+
+.vl {
+    display: inline-block;
+    margin: 40px;
+    vertical-align: top;
+    max-width: 300px; 
+    text-align: center;
+}
+
+.vl img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.galerias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.galerias img {
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+
+.galerias img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+@media (max-width: 950px) {
+
+    .section h1,
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .vl {
+
+        display: inline-block;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+}
+

@@ -1,0 +1,35 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: justify;
+    width: 60%; 
+    margin: 60px auto; 
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#acceptButton {
+    background-color:  #365949;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#acceptButton:hover {
+    background-color: #172720;
+}
+
+.copy {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}

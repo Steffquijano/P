@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: #f2f2f2;
+}
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.producto {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: Montserrat;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: Montserrat;
+}
+
+.precio {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    font-family: Montserrat;
+}
+
+.pro {
+    background-color: #373537;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.pro:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el carrito de compras */
+#carrito {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Coloca el carrito fuera del margen derecho */
+    width: 300px;
+    height: 100%;
+    background-color: #E1E2E6;;
+    z-index: 1000; /* Aumenta el z-index para que aparezca encima de otros elementos */
+    transition: right 0.3s; /* Agrega una transición suave para abrir y cerrar el carrito */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Añade scroll si el contenido es largo */
+}
+
+
+
+
+
+
+
+#carrito.abierto {
+    right: 0; /* Abre el carrito colocándolo en el margen derecho */
+}
+
+#carrito h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#lista-productos {
+    list-style: none;
+    padding-bottom: 100px;
+}
+
+#lista-productos li {
+    margin: 10px;
+}
+
+#carrito button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+/* Estilos para el formulario en el carrito */
+#formulario-pedido {
+    padding: 25px;
+    background-color: #585757;
+    border: none;
+    margin: 0px;
+    border-radius: 0px;
+    color: #fff;
+}
+
+#formulario-pedido label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#formulario-pedido input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+.enviar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.enviar:hover {
+    background-color: #555;
+}
+
+
+
+
+
+#cerrar-carrito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#cerrar-carrito:hover {
+    background-color: #555;
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        margin: 10px 0;
+    }
+
+
+
+}
+
+
+

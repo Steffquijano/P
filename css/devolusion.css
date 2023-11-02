@@ -1,0 +1,23 @@
+
+
+
+.politica{
+    width: 80%;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    
+}
+
+
+p {
+    text-align: justify;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    color: #333;
+}

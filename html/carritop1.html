@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/ca1.css">
+    <link rel="stylesheet" type="text/css" href="../css/productos.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+
+    <div id="carrito">
+        <h2>Productos en el carrito:</h2>
+        <ul id="lista-productos">
+            <!-- Los productos seleccionados se agregarán aquí -->
+        </ul>
+    </div>
+
+    <main>
+        <section class="producto">
+            <img src="../img/maderas rusticas.1.1.jpg" alt="">
+            <h2>Madera pino guatemalteco</h2>
+            <p></p>
+            <span class="precio">$24</span>
+            <button onclick="agregarProducto('Madera pino guatemalteco', 24)">Agregar</button>
+        </section>
+        <section class="producto">
+            <img src="../img/maderas rusticas1.2.jpg" alt="">
+            <h2>Madera pino hondureño</h2>
+            <p></p>
+            <span class="precio">$15</span>
+            <button onclick="agregarProducto('Madera pino hondureño', 15)">Agregar</button>
+        </section>
+        <section class="producto">
+            <img src="../img/maderas rusticas.1.3.jpg" alt="">
+            <h2>Madera de Pino secado al horno</h2>
+            <p></p>
+            <span class="precio">$19.70</span>
+            <button onclick="agregarProducto('Madera de Pino secado al horno', 19.70)">Agregar</button>
+        </section>
+        
+    </main>
+    
+
+    <h2>Resumen del pedido</h2>
+    <form id="formulario-pedido" onsubmit="enviarPedido(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="direccion">Dirección de Envío:</label>
+        <input type="text" id="direccion" required><br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <div id="mensaje"></div>
+
+    <script src="../js/ca1.js"></script>
+    <script src="../js/carrit2.js"></script>
+    <script src="../js/carrit2.js"></script>
+</body>
+</html>

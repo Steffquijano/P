@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-AU-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinares Del Río</title>
+<link rel="stylesheet" href="../css/estilos_index.css">
+	<link rel="stylesheet" href="../css/entradas.css">
+    <link rel="stylesheet" href="../css/buscar.css">
+    <link rel="stylesheet" href="../css/productos.css">
+<link rel="icon" href="../img/logo pinares_Mesa de trabajo 1.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+	<header class="header">
+
+		<div class="menu container" >
+
+			<a href="#" class="logo"><img src="../img/logo pinares_Mesa de trabajo 1.png" alt="logo"></a>
+			<input type="checkbox" id="menu">
+			<label for="menu">
+				<img src="../img/menu.png" class="menu-icono" alt="menu">
+			</label>
+            <nav class="navpino">
+				<ul>
+                    <li><a href="../index.html"><i class="fas fa-house"></i></a></li>
+				<li><a href="../html/quienessomos.html">¿Quiénes somos?</a></li>
+				<li><a href="#">Productos</a>
+				
+			 <ul>
+				 <li><a href="../html/productosconstrucción.html">Construcción</a></li>
+				<li><a href="../html/maderasrusticas.html">Maderas Rusticas</a></li>
+				<li><a href="../html/productoscarpinteria.html">Carpintería</a>
+			   <ol>
+				   <li><a href="../html/recubrimientos.html">Recubrimientos</a></li>
+					<li><a href="../html/pegamentos.html">Pegamentos</a></li>
+					<li><a href="../html/clavos.html">clavos</a></li>
+					</ol>
+				 
+				 </li>
+				 
+			 </ul> 
+				
+				</li>
+				<li><a href="../html/servicios.html">Servicios</a></li>
+				<li><a href="../formulario.html">Contacto</a></li>
+                <li><a href="#">
+                    <div class="carrito-toggle" onclick="toggleCarrito()">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    </a></li>
+               
+                    <li>
+                        <form action="../html/buscar.html" method="get">
+                            <div class="box">
+                                <input type="text" name="query" placeholder="Buscar producto">
+                                <button class="b1" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                        <script src="../js/busqueda.js"></script>
+    
+    
+                    
+                
+                
+                </li></div>
+                    <div id="search-results" class="product-grid">
+                       
+                    </div>
+                    <script src="../js/busqueda.js"></script>
+				
+	   </ul>
+			</nav>
+		</div>
+		
+		<div class="header-content container">
+			<h1>CONSEJOS PARA EL CORTE DE TABLEROS DE MELAMINA</h1>
+		</div>
+	</header>
+
+    <article class="blog-post">
+        <h2>Trucos para Cortar Melamina sin Astillar</h2>
+        <p>Publicado el 2 de Octubre de 2023 por Pinares.</p>
+        <img src="../img2/blo2.1.jpg" alt="">
+        <div class="blog-content">
+            <p><b>* Utilizar Piezas mártir o de descarte.</b><br>
+                Utilizaremos alguna pieza de madera que ya no queramos para realizar el corte y reducir el astillamiento de la melamina.
+                <br>
+                La pieza que queremos cortar debe estar en medio, entre la herramienta y la pieza mártir. Por ejemplo en el caso de la sierra 
+                de mano el mártir estaría debajo.
+                <br>
+                <b>* Cinta.</b><br>
+                El truco más común y efectivo para cortar melamina de forma amateur es el de pegar cinta, normalmente de carrocero 
+                (la que se utiliza para pintar), a lo largo de donde vamos a realizar el corte. Haciendo esto evitamos que se separen los 
+                pequeños fragmentos de melamina que se astillan y salten.  <br>
+                Cuidado a la hora de quitar la cinta. Hazlo con cuidado vayas a levantar más melamina de la que astillaría la sierra.
+                </p>
+        </div>
+        <img src="../img2/blo2.2.jpg" alt="">
+        <div class="blog-content">
+            <p><b>* Cutter.</b><br>
+            Hay también quien recomienda medir muy bien por donde va a pasar la sierra y cortar con un cutter esta línea. Teniéndola 
+            cortada desde un principio en teoría no debería astillarse y partirse.<br>
+            El problema que le veo a este consejo para cortar tableros de melamina es que la precisión necesaria para ajustar el corte del filo 
+            de la sierra al corte hecho con el cutter debe ser perfecta. Y es algo que no está al alcance ni siquiera de mucha herramienta 
+            profesional. Para hacernos una idea ni siquiera estamos hablando de milímetros.
+                </p>
+        </div>
+    </article>
+
+
+
+    <div id="carrito">
+		<button id="cerrar-carrito" onclick="toggleCarrito()">X</button>
+		<h2>Productos en el carrito:</h2>
+		<ul id="lista-productos">
+			
+		</ul>
+	
+	
+	<h2>Resumen del pedido</h2>
+	<form id="formulario-pedido" onsubmit="enviarPedido(event)">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" required><br>
+	
+		<label for="direccion">Dirección de Envío:</label>
+		<input type="text" id="direccion" required><br>
+	
+		<button class="enviar" type="submit">Enviar Pedido</button>
+	</form>
+	
+	<div id="mensaje"></div>
+	
+	<script>
+		function toggleCarrito() {
+			const carrito = document.getElementById('carrito');
+			carrito.classList.toggle('abierto');
+		}
+	
+		let carrito = [];
+		let total = 0;
+	
+		function agregarProducto(nombre, precio) {
+			carrito.push({ nombre, precio });
+			total += precio;
+			actualizarCarrito();
+		}
+	
+		function actualizarCarrito() {
+			const listaProductos = document.getElementById('lista-productos');
+			listaProductos.innerHTML = '';
+			carrito.forEach(producto => {
+				const item = document.createElement('li');
+				item.textContent = `${producto.nombre} - $${producto.precio}`;
+				listaProductos.appendChild(item);
+			});
+		}
+	
+		function enviarPedido(event) {
+			event.preventDefault();
+			const nombre = document.getElementById('nombre').value;
+			const direccion = document.getElementById('direccion').value;
+			const mensaje = document.getElementById('mensaje');
+			if (carrito.length > 0) {
+				mensaje.textContent = `¡Pedido de ${nombre} ha sido enviado por un total de $${total} !`;
+				carrito = [];
+				total = 0;
+				actualizarCarrito();
+				document.getElementById('formulario-pedido').reset();
+			} else {
+				mensaje.textContent = 'Agrega productos al carrito antes de enviar el pedido.';
+			}
+		}
+	</script>
+	
+	</div>
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Acerca de</h3>
+                <ul>
+					<li><a href="../html/quienessomos.html">Pinares</a></li>
+                    <li><a href="../html/servicios.html">Servicios</a></li>
+					<li><a href="../html/productoscarpinteria.html">Productos</a></li>
+					<li><a href="../html/promociones.html">Promociones</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Enlaces de interes</h3>
+                <ul>
+                    <li><a href="../html/blog.html">Blog</a></li>
+                    <li><a href="../formulario.html">Contacto</a></li>
+					<li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+					<li><a href="../html/opiniones.html">Opiniones y reseñas</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Otras secciones</h3>
+                <ul>
+                    <li><a href="../html/politicas.html">Politicas de privasidad</a></li>
+                    <li><a href="../html/terminos.html">Terminos y condiciones</a></li>
+                    <li><a href="../html/devolución.html">Politicas de devolicón</a></li>
+					<li><a href="../html/creadores.html">Creadores</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-link">
+                <h4>Síguenos</h4>
+                <div class="social-link"></div>
+                <a href="https://www.facebook.com/p/PINARES-DEL-RIO-SA-DE-CV-100027943129057/?paipv=0&eav=AfYyWK8gO9F0lWudeCqtJVbuMDK0QmNzdWlA3wml7IUX3LoaBwduZoDOXDyuY7geoKQ&_rdr"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/pinaresdelrio/"><i class="fab fa-instagram"></i></a>
+               <a href="https://api.whatsapp.com/send?phone=+50361149160" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+        </div>
+        <br>
+		            <p class="copy">&copy; 2023 Pinares Del Río. Todos los derechos reservados.</p>
+    </footer>
+ 
+</body>
+</html>

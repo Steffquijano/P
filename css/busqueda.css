@@ -1,0 +1,293 @@
+body {
+    font-family: Montserrat;
+ 
+}
+
+h1 {
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.product-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.2s;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.product-item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+   
+}
+
+.product-item button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 950px){
+      
+	.menu{
+        padding: 30px;
+    }
+    
+    .menu label {
+        display: initial;
+    }
+
+.menu .navpino {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #373537;
+    display: none;
+}
+
+.menu .navpino ul li {
+    width: 100%;
+}
+
+.menu .navpino ul li a{
+    padding: 0 30px 0 30%;
+}
+
+.menu .navpino ul li ul{
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.menu .navpino ul li ul li{
+    background-color: #365949;
+}
+
+.menu .navpino ul li ul li ol li{
+	background-color: #373537;
+}
+
+.menu .navpino ul li ul li ol{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+#menu:checked ~ .navpino {
+    display: initial;
+    
+}
+
+
+
+.header{
+	min-height: 50vh;
+}
+
+.header-content h1{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+.header-content p{
+	font-size: 16px;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.car{
+	margin-bottom: 5px;
+	width: 20px;
+}
+
+
+.pinoo, .pino1, .pino2 {
+	  padding: 9px 18px; 
+	}
+  
+	.pinoo:hover, .pino1:hover, .pino2:hover {
+	  padding: 9px 18px; 
+
+	}
+
+.pinares-content h2{
+	font-size: 35px;
+	line-height: 60px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.txt-p{
+	font-size: 14px;
+	padding: 0 20px;
+	margin-bottom: 25px;
+}
+
+.pino-group{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.pino-1{
+	padding: 15px;
+}
+
+.pino-1 img{
+	width: 150px;
+	margin: 20px;
+}
+
+.pino-1 h3 {
+	font-size: 20px; 
+	margin-bottom: 10px;
+  }
+.pino-1 p{
+	font-size: 14px;
+	text-align: center;
+}
+
+.productos-group{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+  .productos-content h2 {
+	font-size: 35px; 
+	line-height: 60px;
+	margin-bottom: 10px;
+  }
+
+  .productos-content p {
+	font-size: 14px; 
+	padding: 0 20px; 
+	margin-bottom: 20px;
+  }
+
+  .productos-1 {
+	padding: 0 20px; 
+  }
+
+  .productos-1 img {
+	width: 150px; 
+	margin: 25px;
+  }
+
+  .productos-1 h3 {
+	font-size: 14px; 
+  }
+
+
+    .general {
+        flex-direction: column;
+    }
+
+	.general p{
+		text-align: center;
+	}
+
+	.general h2 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+    .general-1 {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .general-2,
+    .general-3 {
+        width: 100%;
+        background-size: cover;
+        
+    }
+
+	.general-1,
+    .general-2,
+    .general-3 {
+        width: 100%;
+        padding: 100px;
+    }
+
+    .general-2{
+		margin-bottom: 20px;
+
+	}
+
+	.footer{
+		margin-top: 40px;
+		padding: 25px;
+		text-align: center;
+		align-items: center;
+	}
+
+	.footer-content {
+        flex-direction: column; 
+        flex-wrap: wrap; 
+    }
+
+    .footer-link {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    
+	.link h3 {
+		font-size: 13px;
+	}
+	
+	.link a {
+		font-size: 10px;
+	}
+
+	.footer-link h4 {
+		font-size: 13px;
+	}
+}
+
+
+
+
+
+

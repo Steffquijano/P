@@ -1,0 +1,99 @@
+
+.opiniones{
+    font-family: Montserrat;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.reviews {
+    margin: 20px 0;
+}
+
+.add-review {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form input, #review-form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.delete-button {
+    margin-bottom: 15px;
+    background-color: #365949;;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #172720;
+}
+
+.b2 {
+    margin: 20px;
+    background-color: #365949;;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.b2:hover {
+    background-color: #2f5243;
+}
+
+#review-form  textarea::placeholder{
+    font-family: Montserrat;
+    color: #909090;
+}
+
+input:only-of-type{
+    color: #373537;
+    font-family: Montserrat;
+
+}
+
+textarea:only-of-type{
+    color: #373537;
+    font-family: Montserrat;
+}
+
+#review-form  input::placeholder{
+    color:  #909090;
+    font-family: Montserrat;
+}
+
+
+
+#review-form input {
+    caret-color: #373537;; /* Puedes ajustar el color a tu preferencia */
+}
+
+
+@media (max-width: 950px){
+
+    .opiniones{
+        max-width: 600px;
+        margin: 40px auto;
+    }
+    
+}
