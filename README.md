@@ -50,7 +50,7 @@ recubrimientos.html
 servicios.html
 
 carpeta img
-https://github.com/Steffquijano/PINARES-DEL-RIO_DPS_G04T/tree/main/img
+https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/tree/main/img
 dentro de esta carpeta se encuentran alojadas algunas de las imágenes de productos utilizadas dentro de nuestra página web.
 
 carpeta img2
