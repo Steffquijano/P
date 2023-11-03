@@ -81,7 +81,7 @@ https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/blob/main/form
 Se evidencia el uso de formularios y la implementación dentro de nuestra página web.
 
 Index.html
-https://github.com/Steffquijano/PINARES-DEL-RIO_DPS_G04T/blob/main/index.html
+https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/blob/main/index.html
 Se evidencia la creación del Código HTML de nuestra página web.
 
 Procesar Formulario.
