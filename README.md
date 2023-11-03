@@ -69,7 +69,12 @@ Al igual que en la carpeta anterior dentro de esta carpeta se encuentran alojado
 carpeta js
 https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/tree/main/js
 Dentro de esta carpeta se encuentran alojados los archivos Javascript que se utilizaron para la creación de nuestra pagina y dentro de esta carpeta se encuentran los siguientes archivos:
-
+busqueda.js
+ca1.js
+creadores.js
+opiniones.js
+preguntas frecuentes.js
+terminos.js
 
 Formulario
 https://github.com/Steffquijano/PINARES-DEL-RIO_DPS_G04T/blob/main/formulario.html
