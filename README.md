@@ -85,7 +85,7 @@ https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/blob/main/inde
 Se evidencia la creación del Código HTML de nuestra página web.
 
 Procesar Formulario.
-https://github.com/Steffquijano/PINARES-DEL-RIO_DPS_G04T/blob/main/procesar_formulario.php
+https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/blob/main/procesar_formulario.php
 El siguiente Código se utilizó para realizar la conexión de nuestro formulario a una base de datos MYSQL.
 
 Carpeta bocetos
