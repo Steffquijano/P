@@ -31,7 +31,7 @@ servicios.css
 style.css
 
 carpeta HTML
-https://github.com/Steffquijano/PINARES-DEL-RIO_DPS_G04T/tree/main/html
+https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/tree/main/html
 Dentro de esta carpeta podrán ser encontrados los diferentes archivos HTML utilizados para para la creación de nuestra página. dentro de esta carpeta se encuentran los siguientes archivos:
 blog.html
 clavos.html
