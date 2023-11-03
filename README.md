@@ -54,7 +54,7 @@ https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/tree/main/img
 dentro de esta carpeta se encuentran alojadas algunas de las imágenes de productos utilizadas dentro de nuestra página web.
 
 carpeta img2
-https://github.com/Steffquijano/PINARES-DEL-RIO_DPS_G04T/tree/main/img2
+https://github.com/Steffquijano/Pinares-Del-Rio_DPS_G04T_Fase_III/tree/main/img2
 Al igual que en la carpeta anterior dentro de esta carpeta se encuentran alojados más de los recursos gráficos que han sido utilizados dentro de nuestra página web.
 
 Formulario
