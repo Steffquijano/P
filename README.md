@@ -1,16 +1,19 @@
 # Pinares-Del-Rio_DPS_G04T_Fase_III
 <p>
 Se entrega el prototipo de página web con los contenidos vistos a lo largo de la planificación de la materia los cuales son:
-<ul><li>-Uso de css, css avanzado, clases e ID</li>
-        <li>-Uso de css, css avanzado, clases e ID</li>
+<ul>            <li>-Uso de elementos básicos de una estructura de HTML5. </li>
+	        <li>-Uso de css, css avanzado, clases e ID</li>
 		<li>-Modelo de caja. </li>
 		<li>-Posicionamiento y visualización. </li>
 		<li>-Uso de listas. </li>
-		<li>-Uso de listas. </li>
-		<li>-Uso de listas. </li>
-		<li>-menú Multi nivel 3. </li>
+		<li>-Menú Multi nivel 3. </li>
 		<li>-Uso de formularios. </li>
 		<li>-Uso de tablas. </li></ul>
+		<li>-Uso de slider. </li>
+		<li>-Uso de multimedia. </li>
+		<li>-Uso de frameworks. </li>
+		<li>-Diseño responsivo. </li>
+		<li>-Uso del lenguaje de programación Javascript. </li></ul>
 
 Estos son algunos de los archivos alojados y que se encontraran dentro de nuestro repositorio.
 </p>
